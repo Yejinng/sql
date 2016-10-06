@@ -27,8 +27,11 @@ select a.employee_id, a.last_name, a.salary
 	and	a.DEPARTMENT_ID = b.department_id;
 		
 -- 4. 자신의 부서의 평균연본보다 크거나 같은 직원들의 사번, 아이디 , 이름 , 연봉
-select employee_id, nvl(a.DEPARTMENT_ID,0), last_name, salary
-	from employees a, (select department_id, avg(salary) as avg_salary
+select employee_id, a.DEPARTMENT_ID, last_name, salary
+	from employees a, (select nvl(department_id, 0)as department_id, avg(salary) as avg_salary
 							from employees group by department_id) b
-	where a.DEPARTMENT_ID = b.department_id 
+	where nvl(a.DEPARTMENT_ID,0) = b.department_id 
 	and a.SALARY >=  b.avg_salary;
+
+select nvl(department_id, 0), avg(salary) as avg_salary
+	from employees group by department_id;
