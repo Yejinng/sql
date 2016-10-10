@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><Connections>
-  <Connection SubType="ORACLE" autoCommit="true" type="Jdbc">
+  <Connection SubType="ORACLE" autoCommit="false" type="Jdbc">
     <Path>ORACLE</Path>
-    <Name>hr@localhost/xe</Name>
+    <Name>bitdb@localhost/xe</Name>
     <Host>localhost</Host>
     <Port>1521</Port>
-    <User>hr</User>
+    <User>bitdb</User>
     <SavePassword>true</SavePassword>
-    <Password>xItNRnYi675OOJVRt1DOZA==</Password>
+    <Password>7oATrgFSs5mG+sOl9xRpDQ==</Password>
     <RestoreWork>true</RestoreWork>
-    <LastConnectionDate>2016-10-05T14:56:04</LastConnectionDate>
-    <ConnectionType ServiceName="true">Default</ConnectionType>
+    <LastConnectionDate>2016-10-10T09:12:28</LastConnectionDate>
+    <ConnectionType>Default</ConnectionType>
     <ConnectionMode>Default</ConnectionMode>
     <Sid>xe</Sid>
     <Options>
-      <UUID>3f9a4cae-ca80-4e06-a71e-645f242fd028</UUID>
+      <UUID>6cdb434e-3877-4ac5-8017-66116fdc466a</UUID>
       <Origin>tee</Origin>
-      <AutoLogon>true</AutoLogon>
+      <AutoLogon>false</AutoLogon>
       <RestoreState>true</RestoreState>
-      <Performance>2</Performance>
+      <Performance>1</Performance>
       <DriverPath>C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib\ojdbc6.jar</DriverPath>
       <PerformanceOptions>
         <PerformanceOption>
@@ -30,7 +30,7 @@
         </PerformanceOption>
         <PerformanceOption>
           <Key>TRIGGERS</Key>
-          <Value>true</Value>
+          <Value>false</Value>
         </PerformanceOption>
         <PerformanceOption>
           <Key>CLUSTER_COLUMNS</Key>
@@ -46,7 +46,7 @@
         </PerformanceOption>
         <PerformanceOption>
           <Key>PROCEDURES</Key>
-          <Value>true</Value>
+          <Value>false</Value>
         </PerformanceOption>
         <PerformanceOption>
           <Key>JAVA_SOURCES</Key>
@@ -98,7 +98,7 @@
         </PerformanceOption>
         <PerformanceOption>
           <Key>TABLES</Key>
-          <Value>true</Value>
+          <Value>false</Value>
         </PerformanceOption>
         <PerformanceOption>
           <Key>CLUSTERS</Key>
@@ -106,11 +106,11 @@
         </PerformanceOption>
         <PerformanceOption>
           <Key>SEQUENCES</Key>
-          <Value>true</Value>
+          <Value>false</Value>
         </PerformanceOption>
         <PerformanceOption>
           <Key>VIEWS</Key>
-          <Value>true</Value>
+          <Value>false</Value>
         </PerformanceOption>
         <PerformanceOption>
           <Key>VIEW_TRIGGERS</Key>
